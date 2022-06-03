@@ -1,6 +1,6 @@
 /* Google Fonts (Poppins) */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
+@import url('http://fonts.cdnfonts.com/css/scientific-calculator-lcd');
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +10,8 @@
 body{
     font-family: 'Poppins', sans-serif;
     /* background-image: linear-gradient(45deg, white 50%, pink); */
-    background-image: url('/MCA/PROJECTS/bg.jpg')  ;
+    background-image: url('bg.jpg') ;
+    background-size: cover;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -19,22 +20,30 @@ body{
 
 .container{
     width: 300px;
-    background-color: whitesmoke;
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+    /* background-color: whitesmoke; */
+    background-color: #F2AA4CFF;
+    box-shadow: 0 0 30px 0 rgba(243, 233, 233, 0.3);
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
+    
 }
 
 textarea{
     height: 150px;
     width: 100%;
     font-size: 35px;
-    background-color: lightgray;
+    font-family: 'Scientific Calculator LCD', sans-serif;
+     color: aliceblue;                                           
+    /* background-color: lightgray; */
+    background-color: #101820FF;
     outline: 0;
     border: none;
     cursor: initial;
     resize: none;
     padding: 15px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .calcBtns{
@@ -43,8 +52,11 @@ textarea{
 }
 table, tr, td{
     border: 2px solid black;
+    border-radius: 10px;
+    
 }
 td{
     width: 25%;
     cursor: pointer;
+    border-radius: 10px;
 }

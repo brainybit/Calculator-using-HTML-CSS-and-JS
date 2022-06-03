@@ -13,13 +13,15 @@
   <body>
     <h1
       style="
-        position: absolute;
+        position: fixed;
+        align-items: center;
         top: 15px;
-        left: 500px;
+
         font-size: 50px;
         font-family: 'Times New Roman', Times, serif;
         letter-spacing: 5px;
-        color: rgb(255, 255, 255);
+        margin-top: 15px;
+        color: rgb(47, 160, 162);
       "
     >
       CALULATOR
@@ -30,7 +32,7 @@
       <table class="calcBtns">
         <tr>
           <td onclick="eraseAll()">C</td>
-          <td onclick="erase()">CE</td>
+          <td onclick="erase()" id="CE">CE</td>
           <td onclick="operation('.')">.</td>
           <td onclick="operation('/')">/</td>
         </tr>
